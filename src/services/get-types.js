@@ -10,8 +10,8 @@ async function getPokemonTypes() {
     })
     
     const filteredTypes = pokemonTypesNames.filter((type) => type !== 'unknown' && type !== 'shadow')
-    
-    console.log(filteredTypes)
+
+    // console.log(filteredTypes)
     const pokemonListByType = filteredTypes.map(async(pokemonType) => await fetchPokemonByType(pokemonType))
 
     return await Promise.all(pokemonListByType)

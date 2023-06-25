@@ -1,7 +1,6 @@
 import { AppRoutes } from './pages/routes';
-import { ThemeContext, ThemeProvider } from './contexts/theme-context';
+import { ThemeProvider } from './contexts/theme-context';
 import { GlobalStyle } from './styles/global-style';
-import { useContext } from 'react';
 import React from 'react';
 
 function App() {
@@ -12,6 +11,5 @@ function App() {
     </ThemeProvider>
   )
 }
-
   
 export default App;
