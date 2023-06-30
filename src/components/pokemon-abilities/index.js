@@ -12,20 +12,17 @@ function Ability(props) {
         }],
         name: '',
     })
-    // console.log(props)
 
     useEffect(() => {
         async function fetchAbility() {
             const pokemonAbility = await getPokemonAbilities(props.ability)
             setPokemonAbility(pokemonAbility)
-            // console.log(pokemonAbility)
         }
         fetchAbility()
     }, [])
     console.log(pokemonAbility)
     return (
         <>
-            {/* {console.log(pokemonAbility.effect_entries)} */}
             <strong>{pokemonAbility.name}</strong>
 
             {pokemonAbility.effect_entries.map((abilityInfos) => {

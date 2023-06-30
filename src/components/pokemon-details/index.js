@@ -27,14 +27,11 @@ const PokemonDetails = () => {
     useEffect(() => {
         async function fetchData() {
             const pokemon = await getPokemonDetails(name)
-            // console.log(pokemon)
             setPokemonDetails(pokemon)
-            // console.log(pokemon.abilities[0].ability)
         }
         fetchData()
     }, [])
 
-    // console.log(pokemonDetails)
     const { theme } = useContext(ThemeContext)
 
     return (

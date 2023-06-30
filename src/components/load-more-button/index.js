@@ -1,12 +1,20 @@
 import React from "react";
 import { Button, DivBtn } from "../../styles/home-style";
 
-const ButtonLoadMore = ({ setRenderAmount, renderAmount }) => {
+const ButtonLoadMore = ({ setOffset, offset }) => {
     return (
         <DivBtn>
-            <Button onClick={() => setRenderAmount(renderAmount + 10)}>Load more</Button>
+            <Button onClick={() => setOffset(offset + 10)}>Load more</Button>
         </DivBtn>
     )
 }
 
-export { ButtonLoadMore }
+const ButtonLoadMoreTypes = ({ renderAmount, setRenderAmount, setOffset, offset }) => {
+    return (
+        <DivBtn>
+            <Button onClick={() => {setRenderAmount(renderAmount + 10); setOffset(offset + 100)}}>Load more</Button>
+        </DivBtn>
+    )
+}
+
+export { ButtonLoadMore, ButtonLoadMoreTypes }

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { getPokemonTypes } from "../../services/get-types";
-import styled from "styled-components";
+import { SelectStyle } from "../../styles/select-style";
 
-export const Select = ({value, onChange}) => {
+export const Select = ({ value, onChange }) => {
     const [pokemonType, setPokemonType] = useState([])
 
     useEffect(() => {
@@ -12,7 +12,6 @@ export const Select = ({value, onChange}) => {
         }
         fetchType()
     }, []);
-    // console.log(pokemonType)
 
     return (
         <>
@@ -21,7 +20,6 @@ export const Select = ({value, onChange}) => {
                     <option value="All">Select type</option>
 
                     {pokemonType.map((type) => {
-                        // console.log(type)
                         return (
                             <option key={type.id} value={type.name}>{type.name}</option>
                         )
@@ -33,8 +31,3 @@ export const Select = ({value, onChange}) => {
 
 }
 
-const SelectStyle = styled.select`
-width: 200px;
-text-align: center;
-height: 25px;
-`

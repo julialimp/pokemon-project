@@ -17,7 +17,4 @@ const Header = () => {
     )
 }
 
-// style={{ backgroundColor: theme.color }}
-
-
 export { Header }
