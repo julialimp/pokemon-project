@@ -63,7 +63,6 @@ This app obtains data from the public API PokeAPI.
 - I used styled-components library instead of CSS to be able to do it in a dynamic way, being able to write jsx code inside the styling properties;
 - React-router-dom was used to direct the links of the SPA, switching from the home page to the internal page and vice-versa.
 <br>
-<br>
 
 ### What I learned and difficulties
 
