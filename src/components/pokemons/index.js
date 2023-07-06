@@ -24,8 +24,6 @@ const PokemonList = () => {
             (value !== ('All' || 'all')) ? setLimit(400) : setLimit(limit)
 
             const renderPokemons = await getPokemons(limit, offset)
-            // console.log(renderPokemons)
-            // setPokemons([...pokemons, ...renderPokemons])
             setPokemons([...pokemons, ...renderPokemons])
         }
         fetchData()
@@ -68,7 +66,6 @@ const PokemonList = () => {
                     </Container>
                     <ButtonLoadMore setOffset={setOffset} offset={offset} />
                 </>
-
             ) : (
                 <>
                     <Container >

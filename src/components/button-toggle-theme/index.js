@@ -6,7 +6,5 @@ const ButtonChangeTheme = (props) => {
     )
 }
 
-
-
 export { ButtonChangeTheme }
 

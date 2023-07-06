@@ -7,7 +7,6 @@ import { ThemeContext } from "../../contexts/theme-context"
 import { AbilitiesList, Container, DetailsSection, Img, Infos, MoveList, Name, NavLink, PokemonId, Title, TypeList } from "../../styles/infos-style"
 import { BodyStyle } from "../../styles/global-style"
 
-
 const PokemonDetails = () => {
     const [pokemonDetails, setPokemonDetails] = useState({
         sprites: {

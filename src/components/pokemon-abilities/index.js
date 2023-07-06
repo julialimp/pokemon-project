@@ -20,7 +20,7 @@ function Ability(props) {
         }
         fetchAbility()
     }, [])
-    console.log(pokemonAbility)
+    
     return (
         <>
             <strong>{pokemonAbility.name}</strong>
