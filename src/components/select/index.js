@@ -14,19 +14,17 @@ export const Select = ({ value, onChange }) => {
     }, []);
 
     return (
-        <>
-            <label>
-                <SelectStyle name="selectedType" value={value} onChange={onChange}>
-                    <option value="All">Select type</option>
+        <label>
+            <SelectStyle name="selectedType" value={value} onChange={onChange}>
+                <option value="All">Select type</option>
 
-                    {pokemonType.map((type) => {
-                        return (
-                            <option key={type.id} value={type.name}>{type.name}</option>
-                        )
-                    })}
-                </SelectStyle>
-            </label>
-        </>
+                {pokemonType.map((type) => {
+                    return (
+                        <option key={type.id} value={type.name}>{type.name}</option>
+                    )
+                })}
+            </SelectStyle>
+        </label>
     )
 
 }

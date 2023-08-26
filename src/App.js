@@ -1,4 +1,4 @@
-import { AppRoutes } from './pages/routes';
+import { AppRoutes } from './routes';
 import { ThemeProvider } from './contexts/theme-context';
 import { GlobalStyle } from './styles/global-style';
 import React from 'react';

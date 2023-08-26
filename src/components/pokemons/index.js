@@ -21,7 +21,7 @@ const PokemonList = () => {
 
     useEffect(() => {
         async function fetchData() {
-            (value !== ('All' || 'all')) ? setLimit(400) : setLimit(limit)
+            (value !== ('All' && 'all')) ? setLimit(400) : setLimit(limit)
 
             const renderPokemons = await getPokemons(limit, offset)
             setPokemons([...pokemons, ...renderPokemons])
